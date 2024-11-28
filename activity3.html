@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bioData</title>
+    <style>
+::-webkit-scrollbar{
+    width: 0;
+}
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    overflow-x: hidden;
+    height: 300vh;
+}
+header{
+    width: 100%;
+    text-align: center;
+}
+header > p{
+    font-size: 50px;
+    margin: 0;
+    padding-top: 10px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+main > .main-header {
+    display: flex;
+    justify-content: end;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+
+}
+main > div > h1 {
+    font-size: 80px;
+    font-weight: 900;
+    width: 72%;
+}
+main > div > .img {
+    height: 200px;
+    aspect-ratio: 1/1;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+main > .form {
+    width: 99%;
+}
+.form > h2 {
+    font-size: 15px;
+    width: 100%;
+    text-align: start;
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+main > .form-information{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+
+}
+main > .form-information > div {
+    width: 99%;
+    border: 1px solid red;
+    height: 10px;
+    display: flex;
+
+}
+main > .form-information > table{
+    border: 1px solid black;
+    width: 100%;
+    border-radius: 5px;
+
+}
+.row1 {
+    display: flex;
+    justify-content: start;
+    gap: 2px;
+    align-items:center;
+}
+h3{
+    margin: 0;
+}
+.row1 > .tag1,
+.row1 > .tag2{
+    width:400px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    justify-content: space-between;
+}
+.row1 > .input,
+.row2 > .input{
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 19px;
+}
+table {
+    margin-bottom: 10px;
+}
+.row2 > td > h3 {
+    font-size: 15px;
+    width: 400px;
+}
+.row2 > td {
+    display: flex;
+}
+.row2 > td > .input {
+    border-bottom: 1px solid ;
+    width: 90%;
+    align-self: end;
+    height: 10px;
+}
+h2{
+    font-size: 15px;
+    width: 99%;
+    text-align: start;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+.form-footer{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-footer > table{
+    width: 100%;
+    height:fit-content;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.form-footer > .applicant{
+    width: 100%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.form-footer > .applicant > p{
+    width: 60%;
+}
+.Signature{
+    width: 60%;
+    text-align: center;
+    border-top:1px solid black ;
+}
+.Signature > p {
+    margin: 0;
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <p>Bio Data</p>
+    </header>
+    <main>
+        <div class="main-header">
+            <h1>BIO-DATA</h1>
+            <div class="img">
+                <img src="./img/id.jpg" alt="Profile Picture">
+            </div>
+        </div>
+        <div class="form">
+            <h2>PERSONAL DATA</h2>
+        </div>
+        <div class="form-information">
+            <table>
+                <tr class="row1">
+                    <td class="tag1">
+                        <h3>Position Desired</h3> <span>:</span>
+                    </td>
+                    <td class="input">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fullstack Developer</td>
+                    <td class="tag2">
+                        <h3>Date</h3> <span>:</span>
+                    </td>
+                    <td class="input"></td>
+                </tr>
+                <tr class="row1">
+                    <td class="tag1">
+                        <h3>Name</h3> <span>:</span>
+                    </td>
+                    <td class="input">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jushtine Kylle Lasona Taculad</td>
+                    <td class="tag2">
+                        <h3>Gender</h3> <span>:</span>
+                    </td>
+                    <td class="input">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Male</td>
+                </tr>
+                <tr class="row1">
+                    <td class="tag1">
+                        <h3>City Address</h3> <span>:</span>
+                    </td>
+                    <td class="input">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Malabon City</td>
+                    <td class="input"></td>
+                </tr>
+                <tr class="row1">
+                    <td class="tag1">
+                        <h3>Provincial Address</h3> <span>:</span>
+                    </td>
+                    <td class="input">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Metro Manila</td>
+                    <td class="input"></td>
+                </tr>
+                <tr class="row1">
+                    <td class="tag1">
+                        <h3>Telephone</h3> <span>:</span>
+                    </td>
+                    <td class="input">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;091234567890</td>
+                    <td class="tag2">
+                        <h3>Cellphone</h3> <span>:</span>
+                    </td>
+                    <td class="input">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;09123567890</td>
+                </tr>
+                <tr class="row1">
+                    <td class="tag1">
+                        <h3>E-mail Address</h3> <span>:</span>
+                    </td>
+                    <td class="input">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;202202995@cityofmalabonuniversity.edu.ph</td>
+                    <td class="tag2"></td>
+                    <td class="input"></td>
+                </tr>
+                <tr class="row1">
+                    <td class="tag1">
+                        <h3>Date of Birth</h3> <span>:</span>
+                    </td>
+                    <td class="input">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;September 18, 2003</td>
+                    <td class="tag2">
+                        <h3>Birth Place</h3> <span>:</span>
+                    </td>
+                    <td class="input"></td>
+                </tr>
+                <tr class="row1">
+                    <td class="tag1">
+                        <h3>Civil Status</h3> <span>:</span>
+                    </td>
+                    <td class="input">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Single</td>
+                    <td class="tag2">
+                        <h3>Citizenship</h3> <span>:</span>
+                    </td>
+                    <td class="input">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Filipino</td>
+                </tr>
+                <tr class="row1">
+                    <td class="tag1">
+                        <h3>Height</h3> <span>:</span>
+                    </td>
+                    <td class="input">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;168cm</td>
+                    <td class="tag2">
+                        <h3>Weight</h3> <span>:</span>
+                    </td>
+                    <td class="input"></td>
+                </tr>
+                <tr class="row1">
+                    <td class="tag1">
+                        <h3>Religion</h3> <span>:</span>
+                    </td>
+                    <td class="input">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Roman Catholic</td>
+                    <td class="tag2"></td>
+                    <td class="input"></td>
+                </tr>
+                <tr class="row1">
+                    <td class="tag1">
+                        <h3>Spouse</h3> <span>:</span>
+                    </td>
+                    <td class="input"></td>
+                    <td class="tag2">
+                        <h3>Occupation</h3> <span>:</span>
+                    </td>
+                    <td class="input"></td>
+                </tr>
+                <tr class="row1">
+                    <td class="tag1">
+                        <h3>Name of Children</h3> <span>:</span>
+                    </td>
+                    <td class="input"></td>
+                    <td class="tag2">
+                        <h3>Birth Place</h3> <span>:</span>
+                    </td>
+                    <td class="input">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Malabon City</td>
+                </tr>
+                <tr class="row1">
+                    <td class="tag1">
+                        <h3></h3> <span>:</span>
+                    </td>
+                    <td class="input"></td>
+                    <td class="tag2">
+                        <h3></h3> <span>:</span>
+                    </td>
+                    <td class="input"></td>
+                </tr>
+
+                <tr class="row1">
+                    <td class="tag1">
+                        <h3></h3> <span>:</span>
+                    </td>
+                    <td class="input"></td>
+                    <td class="tag2">
+                        <h3></h3> <span>:</span>
+                    </td>
+                    <td class="input"></td>
+                </tr>
+                <tr class="row1">
+                    <td class="tag1">
+                        <h3>Father's Name</h3> <span>:</span>
+                    </td>
+                    <td class="input">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jay-Ar Pering Taculad</td>
+                    <td class="tag2">
+                        <h3>Occupation</h3> <span>:</span>
+                    </td>
+                    <td class="input"></td>
+                </tr>
+                <tr class="row1">
+                    <td class="tag1">
+                        <h3>Mother's Name</h3> <span>:</span>
+                    </td>
+                    <td class="input">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Elsa Maceda Lasona</td>
+                    <td class="tag2">
+                        <h3>Occupation</h3> <span>:</span>
+                    </td>
+                    <td class="input"></td>
+                </tr>
+                <tr class="row2">
+                    <td>
+                        <h3>Language or dialiect spoken and written:</h3>
+                        <div class="input">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;English and Filipino</div>
+                    </td>
+                </tr>
+                <tr class="row2">
+                    <td>
+                        <h3>Person to be contacted in case of emergency:</h3>
+                        <div class="input"><div>
+                    </td>
+                </tr>
+                <tr class="row2">
+                    <td>
+                        <h3>His or her address and telephone:</h3>
+                        <div class="input"></div>
+                    </td>
+                </tr>
+            </table>
+            <h2>EDICATIONAL BACKGROUND</h2>
+            <table>
+                <tr class="row1">
+                    <td class="tag1">
+                        <h3>Elementary</h3> <span>:</span>
+                    </td>
+                    <td class="input">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Imelda Elementary School</td>
+                    <td class="tag2">
+                        <h3>Year Graduated</h3> <span>:</span>
+                    </td>
+                    <td class="input">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2016</td>
+                </tr>
+                <tr class="row1">
+                    <td class="tag1">
+                        <h3>High School</h3> <span>:</span>
+                    </td>
+                    <td class="input">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;M.B Asistio Sr. High School</td>
+                    <td class="tag2">
+                        <h3>Year Graduated</h3> <span>:</span>
+                    </td>
+                    <td class="input">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2020</td>
+                </tr>
+                <tr class="row1">
+                    <td class="tag1">
+                        <h3>College</h3> <span>:</span>
+                    </td>
+                    <td class="input">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;City of Malabon University</td>
+                    <td class="tag2">
+                        <h3>Year Graduated</h3> <span>:</span>
+                    </td>
+                    <td class="input">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Current</td>
+                </tr>
+                <tr class="row1">
+                    <td class="tag1">
+                        <h3>Degree Received</h3> <span>:</span>
+                    </td>
+                    <td class="input"></td>
+                    <td class="input"></td>
+                </tr>
+                <tr class="row1">
+                    <td class="tag1">
+                        <h3>Degree Received</h3> <span>:</span>
+                    </td>
+                    <td class="input"></td>
+                    <td class="input"></td>
+                </tr>
+
+
+            </table>
+
+            <h2>EMPLOYMENT RECORD</h2>
+            <table>
+                <tr class="row1">
+                    <td class="tag1">
+                        <h3>Company Name</h3> <span>:</span>
+                    </td>
+                    <td class="input"></td>
+                    <td class="input"></td>
+                </tr>
+                <tr class="row1">
+                    <td class="tag1">
+                        <h3>Position</h3> <span>:</span>
+                    </td>
+                    <td class="input"></td>
+                    <td class="tag2">
+                        <h3>From</h3> <span>:</span>
+                    </td>
+                    <td class="input"></td>
+                    <td class="tag2">
+                        <h3>To</h3> <span>:</span>
+                    </td>
+                    <td class="input"></td>
+                </tr>
+                <tr class="row1">
+                    <td class="tag1">
+                        <h3>Position</h3> <span>:</span>
+                    </td>
+                    <td class="input"></td>
+                    <td class="tag2">
+                        <h3>From</h3> <span>:</span>
+                    </td>
+                    <td class="input"></td>
+                    <td class="tag2">
+                        <h3>To</h3> <span>:</span>
+                    </td>
+                    <td class="input"></td>
+                </tr>
+            </table>
+
+            <h2>CHARACTER REFFERENCE</h2>
+            <table>
+                <tr class="row1">
+                    <td class="tag1">
+                        <h3>Name</h3> <span>:</span>
+                    </td>
+                    <td class="input"></td>
+                    <td class="tag2">
+                        <h3>Company</h3> <span>:</span>
+                    </td>
+                    <td class="input"></td>
+                </tr>
+
+                <tr class="row1">
+                    <td class="tag1">
+                        <h3>Position</h3> <span>:</span>
+                    </td>
+                    <td class="input"></td>
+                    <td class="tag2">
+                        <h3>Contact No.</h3> <span>:</span>
+                    </td>
+                    <td class="input"></td>
+                </tr>
+
+                <tr class="row1">
+                    <td class="tag1">
+                        <h3>Name</h3> <span>:</span>
+                    </td>
+                    <td class="input"></td>
+                    <td class="tag2">
+                        <h3>Company</h3> <span>:</span>
+                    </td>
+                    <td class="input"></td>
+                </tr>
+
+                <tr class="row1">
+                    <td class="tag1">
+                        <h3>Position</h3> <span>:</span>
+                    </td>
+                    <td class="input"></td>
+                    <td class="tag2">
+                        <h3>Contact No.</h3> <span>:</span>
+                    </td>
+                    <td class="input"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="form-footer">
+            <table>
+                <tr class="row1">
+                    <td class="tag1">
+                        <h3>Res. Cert. No</h3> <span>:</span>
+                    </td>
+                    <td class="input"></td>
+                <tr class="row1">
+                    <td class="tag1">
+                        <h3>Issued at</h3> <span>:</span>
+                    </td>
+                    <td class="input"></td>
+                <tr class="row1">
+                    <td class="tag1">
+                        <h3>Issued on</h3> <span>:</span>
+                    </td>
+                    <td class="input"></td>
+                <tr class="row1">
+                    <td class="tag1">
+                        <h3>SSS</h3> <span>:</span>
+                    </td>
+                    <td class="input"></td>
+                <tr class="row1">
+                    <td class="tag1">
+                        <h3>TIN</h3> <span>:</span>
+                    </td>
+                    <td class="input"></td>
+                <tr class="row1">
+                    <td class="tag1">
+                        <h3>NBI No.</h3> <span>:</span>
+                    </td>
+                    <td class="input"></td>
+                <tr class="row1">
+                    <td class="tag1">
+                        <h3>Passport No.</h3> <span>:</span>
+                    </td>
+                    <td class="input"></td>
+
+            </table>
+            <div class="applicant">
+
+                <p>I here certify that the above information is true and correct to the best if knowledge and belief. I
+                    also understand that any misinterpretation will be considered reason for withdrawal of an offer or
+                    subsequent dismissal if employed.</p>
+
+                <div class="Signature">
+                    <p>Applicant's Signature</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
