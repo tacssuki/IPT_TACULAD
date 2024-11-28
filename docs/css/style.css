@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    background-color: #000000;
+    overflow-x: hidden;
+    height: auto;
+}
+header{
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+
+}
+header > div > .logo  {
+    height: 100%;
+    width: 150px;
+}
+header > div > .logo > p{
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+}
+header > div > .logo > p > span{
+    background-color: #FF9900;
+    padding: 3px 5px;
+    border-radius: 5px;
+    margin-left: 4px;
+    color: #000000;
+}
+header > div > nav {
+    width: 35%;
+}
+header > div > nav > ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+header > div > nav > ul > li > a{
+    color: white;
+    font-size: 19px;
+    text-decoration: none;
+}
+header > div > nav > ul > li a:hover{
+    color: #FF9900;
+}
+main{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main > .main-content{
+    height: 80%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 50%;
+    width: 50%;
+}
+.info > h1{
+    width: 100%;
+    font-size: 50px;
+    margin: 0;
+}
+.info > p {
+    width: 100%;
+    font-size: 20%;
+    text-align: justify;
+    font-size: 20px;
+}
+.links{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.links > button {
+    background-color: #FF9900;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bolder;
+    transition: .4s;
+}
+.links > button:hover{
+    background-color: white;
+    color: #FF9900;
+
+}
+.links > a {
+    color: #FF9900;
+    font-size: 40px;
+}
+.links > span {
+    height: 100%;
+    width: 1px;
+    background: white;
+}
